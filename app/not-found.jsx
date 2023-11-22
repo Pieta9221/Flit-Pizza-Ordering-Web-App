@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-// import Pic from '../public/sadpizza.png'
+
 
 export default function NotFound() {
   return (

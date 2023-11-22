@@ -1,7 +1,7 @@
-import { PT_Sans } from 'next/font/google'
+import { pt_sans } from './fonts'
 import './globals.css'
-
-const pt = PT_Sans({ subsets: ['latin'], weight: ["400", "700"] })
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export const metadata = {
   title: 'Pizzon App',
@@ -11,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={pt.className}>{children}</body>
+      <body className={pt_sans.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
