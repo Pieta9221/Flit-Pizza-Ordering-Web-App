@@ -25,7 +25,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="md:flex items-center space-x-8 list-none">
+        <ul className="md:flex items-center space-x-8 list-none font-bold">
           <div className="hidden md:flex items-center space-x-8 list-none">
           <li>
             <Link href="/">
@@ -54,11 +54,13 @@ const Navbar = () => {
           </li>
           </div>
           <div className="flex md:flex items-center justify-center space-x-8">
-          <Image src="/search-icon.png" alt="Search" width={24} height={24} />
+            <Link href="/cart">
+            <Image src="/search-icon.png" alt="Search" width={24} height={24} className='cursor-pointer'/>
+          </Link>
           <Link href="/cart">
             <div className="relative cursor-pointer">
               <Image src="/cart-blue.png" alt="Cart" width={30} height={30} />
-              <div className="absolute top-[-8px] right-[-8px] w-5 h-5 bg-[#d1411e] rounded-full p-2 flex items-center justify-center font-bold text-sm text-white">
+              <div className="absolute top-[-8px] right-[-8px] w-5 h-5 bg-[#E20202] rounded-full p-2 flex items-center justify-center font-bold text-sm text-white">
                 2 
               </div>
             </div>
@@ -75,14 +77,14 @@ const Navbar = () => {
             onClick={toggleMobileNav}
             className="text-gray-600 hover:text-gray-800 focus:outline-none"
           >
-            {isMobileNavOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            {isMobileNavOpen ? <AiOutlineClose size={30} className='ml-3' /> : <AiOutlineMenu size={30} className='ml-3'/>}
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
       {isMobileNavOpen && (
-        <ul className="md:hidden border-t  border-gray-200 list-none mx-4">
+        <ul className="md:hidden border-t  border-gray-200 list-none font-bold mx-4">
           <li>
             <Link href="/">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">HOME</span>

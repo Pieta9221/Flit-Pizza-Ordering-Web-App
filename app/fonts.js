@@ -1,12 +1,13 @@
-import { PT_Sans, Roboto_Mono } from 'next/font/google'
+import { Roboto, Poppins } from 'next/font/google'
  
-export const pt_sans = PT_Sans({
+export const pt_sans = Roboto({
   subsets: ['latin'],
   display: 'swap',
   weight: ["400", "700"]
 })
  
-export const roboto_mono = Roboto_Mono({
+export const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
+  weight: ["100", "400", "700"]
 })

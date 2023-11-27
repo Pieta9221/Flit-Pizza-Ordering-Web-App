@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <div className="text-center mt-8">
+    <div className="text-center h-screen justify-center">
       <div className="relative w-64 h-48 mx-auto mb-8">
         <Image
           src='/sadpizza.png'
@@ -14,7 +14,7 @@ export default function NotFound() {
         priority
       />
       </div>
-      <h1 className="text-3xl font-bold text-orange-500 mb-4">
+      <h1 className="text-3xl font-bold text-[#777777] mb-4">
         Oops! It seems the pizza you ordered has gone missing!
       </h1>
       <p className="text-teal-600 text-2xl">

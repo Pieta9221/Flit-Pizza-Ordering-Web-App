@@ -1,4 +1,4 @@
-import { pt_sans } from './fonts'
+import { pt_sans, poppins } from './fonts'
 import './globals.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={pt_sans.className}>
-        <Navbar />
+        <Navbar className={poppins.className} />
         {children}
         <Footer />
       </body>
