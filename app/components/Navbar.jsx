@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 h-150 z-50">
       <div className="container mx-auto flex items-center justify-between p-8">
       <div className="absolute top-[-10px] left-[20%]">
-          <Image src="/header-img.png" alt="Logo" width={160} height={70} />
+          <Image src="/header-img.png" alt="Logo" width={200} height={70} />
       </div>
        
         <Link href="/">
@@ -38,12 +38,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#">
               <span className="cursor-pointer">PAGES</span>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="#">
               <span className="cursor-pointer">BLOG</span>
             </Link>
           </li>
@@ -54,12 +54,12 @@ const Navbar = () => {
           </li>
           </div>
           <div className="flex md:flex items-center justify-center space-x-8">
-            <Link href="/cart">
-            <Image src="/search-icon.png" alt="Search" width={24} height={24} className='cursor-pointer'/>
+            <Link href="#">
+            <Image src="/search-icon.png" alt="Search" width={24} height={24} className='cursor-pointer' layout="responsive"/>
           </Link>
           <Link href="/cart">
             <div className="relative cursor-pointer">
-              <Image src="/cart-blue.png" alt="Cart" width={30} height={30} />
+              <Image src="/cart-blue.png" alt="Cart" width={30} height={30} layout="responsive"/>
               <div className="absolute top-[-8px] right-[-8px] w-5 h-5 bg-[#DC3545] rounded-full p-2 flex items-center justify-center font-bold text-sm text-white">
                 2 
               </div>

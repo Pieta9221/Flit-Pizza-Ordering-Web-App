@@ -18,11 +18,11 @@ export default function single() {
           <div className='mb-10 flex gap-12 align-middle items-center'>
           <div className='relative cursor-pointer'>
             <Image src="/pizza-icon.png" alt="pizza-size" width={50} height={50}/>
-            <span className='absolute bg-[#DC3545] text-white text-sm top-0 right-[-30%] rounded-full py-1 px-2'>Small</span>
+            <span className='absolute bg-[#DC3545] text-white text-sm top-0 right-[-50%] rounded-full py-1 px-2'>Small</span>
           </div>
           <div className='relative cursor-pointer'>
             <Image src="/pizza-icon.png" alt="pizza-size" width={70} height={70}/>
-            <span className='absolute bg-[#DC3545] text-white text-sm top-0 right-[-25%] rounded-full py-1 px-2'>Medium</span>
+            <span className='absolute bg-[#DC3545] text-white text-sm top-1 right-[-27%] rounded-full py-1 px-2'>Medium</span>
           </div>
           <div className='relative cursor-pointer'>
             <Image src="/pizza-icon.png" alt="pizza-size" width={100} height={100}/>
@@ -65,3 +65,4 @@ export default function single() {
     </div>
   )
 }
+
