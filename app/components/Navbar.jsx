@@ -55,11 +55,11 @@ const Navbar = () => {
           </div>
           <div className="flex md:flex items-center justify-center space-x-8">
             <Link href="#">
-            <Image src="/search-icon.png" alt="Search" width={24} height={24} className='cursor-pointer' layout="responsive"/>
+            <Image src="/search-icon.png" alt="Search" width={24} height={24} className='cursor-pointer' />
           </Link>
           <Link href="/cart">
             <div className="relative cursor-pointer">
-              <Image src="/cart-blue.png" alt="Cart" width={30} height={30} layout="responsive"/>
+              <Image src="/cart-blue.png" alt="Cart" width={30} height={30}/>
               <div className="absolute top-[-8px] right-[-8px] w-5 h-5 bg-[#DC3545] rounded-full p-2 flex items-center justify-center font-bold text-sm text-white">
                 2 
               </div>

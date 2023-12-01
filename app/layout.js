@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 export const metadata = {
   title: 'Pizzon App',
   description: 'Pizza Delivery App',
+  image: '/hero.png'
 }
 
 export default function RootLayout({ children }) {
