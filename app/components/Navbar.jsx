@@ -29,27 +29,27 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8 list-none">
           <li>
             <Link href="/">
-              <span className="nav-link cursor-pointer">HOME</span>
+              <span className="cursor-pointer">HOME</span>
             </Link>
           </li>
           <li>
             <Link href="/products">
-              <span className="nav-link cursor-pointer">PRODUCTS</span>
+              <span className="cursor-pointer">PRODUCTS</span>
             </Link>
           </li>
           <li>
-            <Link href="/menu">
-              <span className="nav-link cursor-pointer">PAGES</span>
+            <Link href="/">
+              <span className="cursor-pointer">PAGES</span>
             </Link>
           </li>
           <li>
-            <Link href="/menu">
-              <span className="nav-link cursor-pointer">BLOG</span>
+            <Link href="/">
+              <span className="cursor-pointer">BLOG</span>
             </Link>
           </li>
           <li>
-            <Link href="/menu">
-              <span className="nav-link cursor-pointer">CONTACT</span>
+            <Link href="/">
+              <span className="cursor-pointer">CONTACT</span>
             </Link>
           </li>
           </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <Link href="/cart">
             <div className="relative cursor-pointer">
               <Image src="/cart-blue.png" alt="Cart" width={30} height={30} />
-              <div className="absolute top-[-8px] right-[-8px] w-5 h-5 bg-[#E20202] rounded-full p-2 flex items-center justify-center font-bold text-sm text-white">
+              <div className="absolute top-[-8px] right-[-8px] w-5 h-5 bg-[#DC3545] rounded-full p-2 flex items-center justify-center font-bold text-sm text-white">
                 2 
               </div>
             </div>
@@ -96,17 +96,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/menu">
+            <Link href="/">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">PAGES</span>
             </Link>
           </li>
           <li>
-            <Link href="/menu">
+            <Link href="/">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">BLOG</span>
             </Link>
           </li>
           <li>
-            <Link href="/menu">
+            <Link href="/">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">CONTACT</span>
             </Link>
           </li>

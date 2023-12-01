@@ -6,8 +6,8 @@ import { FaShoppingCart } from 'react-icons/fa'
 
 export default function Hero() {
   return (
-    <div class="flex flex-col md:flex-row md:h-screen mx-auto p-4 relative">
-        <div class=" flex md:flex-col md:w-1/2 justify-center text-center md:text-left p-4">
+    <div className="flex flex-col md:flex-row md:h-screen mx-auto p-4 relative">
+        <div className=" flex md:flex-col md:w-1/2 justify-center text-center md:text-left p-4">
             <div className='w-full md:w-[90%]'>
                 <h1 className='text-4xl md:text-6xl font-bold tracking-wider leading-[1.3] mb-4'>Handmade, With an Extra Pinch of <span className='text-[#e20202]'>Love</span>
                 </h1>
