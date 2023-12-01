@@ -77,7 +77,7 @@ function onApprove(data) {
     <div className="flex flex-col md:flex-row items-start mx-auto p-4 my-20 gap-4">
       <div className="md:w-2/3 w-full mb-4 md:mb-0">
         <div className="overflow-auto">
-          <table className="w-full border-b border-gray-300">
+          <table className="w-full border-b border-gray-300 px-3">
           <thead>
               <tr>
                 <th className="border-b text-left">Product</th>
@@ -105,7 +105,7 @@ function onApprove(data) {
         </div>
       </div>
       <div className="flex md:flex-col md:w-1/3 items-start md:text-left w-full">
-        <div className='w-[90%] bg-[#333333] text-white px-10 py-8'>
+        <div className='w-full md:w-[90%] bg-[#333333] text-white px-10 py-8'>
           <h1 className='text-xl font-bold tracking-wider mb-5'>CART TOTAL</h1>
           <p className='font-bold'>Subtotal:<span className='font-medium ml-5'>$160</span></p>
           <p className='font-bold'>Discount:<span className='font-medium ml-5'>$79.60</span></p>
