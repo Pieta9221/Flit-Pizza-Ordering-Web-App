@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react'
 import {
   PayPalScriptProvider,
@@ -70,6 +69,7 @@ function onApprove(data) {
                 fundingSource={undefined}
                 createOrder={createOrder}
                 onApprove={onApprove}
+                
                
             />
         </>
@@ -116,11 +116,11 @@ function onApprove(data) {
           <p className='font-bold mb-20'>Total:<span className='font-medium ml-5'>$160</span></p>
 
           {open ? (
-            <div >
-              <button onClick={()=>setCash(true)} className='cursor-pointer text-teal-500 w-full py-2 mb-2 text-lg flex font-semibold bg-white tracking-wider align-middle justify-center'>
+            <div className='flex-col w-full static'>
+              <button onClick={()=>setCash(true)} className='cursor-pointer text-teal-500 w-full py-2 rounded-sm mb-2 text-lg flex font-semibold bg-white tracking-wider align-middle justify-center'>
             
             CASH ON DELIVERY</button>
-              <div style={{ maxWidth: "750px"}}>
+              <div style={{ maxWidth: "750px"}}  >
               <PayPalScriptProvider
               options={{ clientId: "test", components: "buttons", currency: "USD", "disable-funding":"card,p24", }}>
                 <ButtonWrapper />
@@ -137,7 +137,7 @@ function onApprove(data) {
         </div>
       </div>
         {cash &&(
-        <CashOrderDetail />
+        <CashOrderDetail onClose={() => setCash(false)}/>
       )}
     </div>
   );

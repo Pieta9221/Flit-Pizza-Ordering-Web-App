@@ -1,7 +1,9 @@
+"use client"
 import Link from 'next/link'
 import {  AiOutlineClose } from 'react-icons/ai'
 
-export default function CashOrderDetail() {
+
+export default function CashOrderDetail({ onClose }) {
   return (
     <div className="w-screen h-screen bg-opacity-50 bg-gray-200 fixed top-0 z-50 flex items-center justify-center text-[#222222]">
         <div className="w-500 bg-white p-10 md:p-10 lg:p-50 rounded-2xl flex flex-col justify-between relative">
@@ -40,7 +42,7 @@ export default function CashOrderDetail() {
        </Link>
 
        
-            <div className="p-2 bg-gray-600 text-white rounded-full flex items-center justify-center my-3 cursor-pointer absolute top-0 right-[5%]">
+            <div onClick={onClose} className="p-2 bg-gray-600 text-white rounded-full flex items-center justify-center my-3 cursor-pointer absolute top-0 right-[5%]">
             <AiOutlineClose size={20} />
             </div>
  
