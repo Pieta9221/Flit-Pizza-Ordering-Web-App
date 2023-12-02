@@ -7,11 +7,14 @@ import {
   PayPalButtons,
   usePayPalScriptReducer
 } from "@paypal/react-paypal-js";
+import CashOrderDetail from '../components/CashOrderDetail';
 
 
 
 export default function Page() {
   const [open, setOpen] = useState(false)
+  const [cash, setCash] = useState(false)
+
   const style = {"layout":"vertical"}
   function createOrder() {
     // replace this url with your server
@@ -133,6 +136,9 @@ function onApprove(data) {
           
         </div>
       </div>
+        {cash &&(
+        <CashOrderDetail />
+      )}
     </div>
   );
 }
