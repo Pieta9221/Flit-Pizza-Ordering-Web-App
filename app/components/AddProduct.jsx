@@ -4,7 +4,7 @@ import {  AiOutlineClose } from 'react-icons/ai'
 
 export default function AddProduct({ onClose }) {
   return (
-    <div className="w-screen h-screen bg-opacity-50 bg-gray-200 fixed top-0 z-50 flex items-center justify-center text-[#444444] overflow-auto">
+    <div className="w-screen h-screen bg-opacity-50 bg-gray-200 fixed top-0 z-50 flex items-center justify-center text-[#444444] overflow-x-auto">
         <div className="w-[80%] md:w-[30%] bg-white p-10 md:p-10 lg:p-50 rounded-2xl flex flex-col justify-between">
             <div className='flex justify-between align-center items-center border-b gap-4 mb-3'>
                 <p className='text-xl font-semibold text-left tracking-wide leading-[1.5] my-3'>Add New Pizza</p>

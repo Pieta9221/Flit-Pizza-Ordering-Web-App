@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md sticky top-0 h-150 z-50">
-      <div className="container mx-auto flex items-center justify-between p-8">
+      <div className="container mx-auto flex items-center justify-between p-6">
       <div className="absolute top-[-10px] left-[20%]">
           <Image src="/header-img.png" alt="Logo" width={200} height={70} />
       </div>
