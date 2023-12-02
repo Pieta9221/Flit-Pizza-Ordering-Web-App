@@ -4,9 +4,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'Pizzon App',
-  description: 'Pizza Delivery App',
-  image: '/hero.png'
+  title: 'Pizzon',
+  description: 'Pizza Delivery App'
 }
 
 export default function RootLayout({ children }) {

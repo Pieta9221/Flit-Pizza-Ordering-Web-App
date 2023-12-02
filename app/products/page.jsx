@@ -1,10 +1,15 @@
+"use client"
 import Image from 'next/image'
 import { FaStar } from 'react-icons/fa'
 import OrderButton from '../components/OrderButton'
 import Link from 'next/link'
+import AddProduct from '../components/AddProduct'
+import { useState } from 'react'
+
 
 
 export default function page() {
+  const [product, setProduct] = useState(false)
   return (
     <div className="p-4">
        <div className="grid grid-cols-1 md:grid-cols-2 justify-between py-8">
@@ -13,7 +18,11 @@ export default function page() {
        <Image src="/filter.png" alt="filter" width={24} height={24} className='mr-3 mt-1'/>
          Filter
       </button>
+
+      
       </div>
+
+     
 
       <div className="grid grid-cols-1 md:grid-cols-2 justify-around">
         <p className='font-bold text-xl py-2'>Showing all 9 results</p>
@@ -28,7 +37,11 @@ export default function page() {
       </div>
 
 </div>
-       
+<div className='mb-5'>
+      <button onClick={()=>setProduct(true)} className='cursor-pointer bg-teal-600 hover:text-black hover:bg-white text-white px-5 py-3 text-lg rounded-full flex font-medium tracking-wider justify-center'>
+       Add New Pizza
+      </button>
+      </div>
                
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       
@@ -118,7 +131,10 @@ export default function page() {
         
 
           
-        </div>        
+        </div> 
+        {product &&(
+        <AddProduct onClose={() => setProduct(false)}/>
+      )}       
           
     </div>
   )
