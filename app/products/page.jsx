@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 
 
-export default function page() {
+export default function Page() {
   const [product, setProduct] = useState(false)
   return (
     <div className="p-4">
