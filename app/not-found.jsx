@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <div className="text-center justify-center items-center flex flex-col my-20">
-      <div className="w-64 h-48 mx-auto mb-8 preparing">
+    <div className="text-center justify-center items-center flex flex-col my-20 mx-auto p-4">
+      <div className="flex mx-auto mb-8 preparing">
         <Image
           src='/sadpizza.png'
           alt="Sad Pizza 404"
