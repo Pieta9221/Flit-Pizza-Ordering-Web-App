@@ -8,13 +8,6 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-/* 
-#zoid-paypal-buttons-uid_471eb69f73_mta6ntq6ndq > iframe.component-frame {
-  z-index: 0;
-} */
-#zoid-paypal-buttons-uid_48c6a0b65c_mtq6mzi6mtq > iframe.component-frame {
-  z-index: 0;
-}
 
 .preparing {
  animation: preparing 1s ease infinite alternate;

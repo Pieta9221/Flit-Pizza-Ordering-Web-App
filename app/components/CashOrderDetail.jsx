@@ -5,7 +5,7 @@ import {  AiOutlineClose } from 'react-icons/ai'
 
 export default function CashOrderDetail({ onClose }) {
   return (
-    <div className="w-screen h-screen bg-opacity-50 bg-gray-200 fixed top-0 z-50 flex items-center justify-center text-[#222222]">
+    <div className="w-screen h-screen bg-opacity-50 bg-gray-200 fixed top-0 z-50 flex items-center justify-center text-[#222222] mx-auto">
         <div className="w-500 bg-white p-10 md:p-10 lg:p-50 rounded-2xl flex flex-col justify-between relative">
         <p className='text-3xl font-medium tracking-wide  leading-[1.5] my-6'>You will pay $12 on delivery</p>
 

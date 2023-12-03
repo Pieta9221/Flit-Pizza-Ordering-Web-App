@@ -62,6 +62,7 @@ function onApprove(data) {
     return (
         <>
             { (showSpinner && isPending) && <div className="spinner" /> }
+            <div style={{ position: 'relative', zIndex: 9 }}>
             <PayPalButtons
                 style={style}
                 disabled={false}
@@ -71,7 +72,7 @@ function onApprove(data) {
                 onApprove={onApprove}
                 
                
-            />
+            /></div>
         </>
     );
 }
@@ -116,8 +117,8 @@ function onApprove(data) {
           <p className='font-bold mb-20'>Total:<span className='font-medium ml-5'>$160</span></p>
 
           {open ? (
-            <div className='flex-col w-full static'>
-              <button onClick={()=>setCash(true)} className='cursor-pointer text-teal-500 w-full py-2 rounded-sm mb-2 text-lg flex font-semibold bg-white tracking-wider align-middle justify-center'>
+            <div className='flex-col w-full'>
+              <button onClick={()=>setCash(true)} className='cursor-pointer text-teal-500 w-full  p-2 text-center rounded-sm mb-2 text-md flex font-semibold bg-white tracking-wider align-middle justify-center'>
             
             CASH ON DELIVERY</button>
               <div style={{ maxWidth: "750px"}}  >
