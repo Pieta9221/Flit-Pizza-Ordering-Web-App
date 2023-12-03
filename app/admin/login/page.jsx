@@ -9,7 +9,7 @@ export default function page() {
   return (
     <div className=" bg-white p-10 md:p-10 lg:p-50 rounded-2xl flex flex-col justify-center items-center mx-auto my-20 relative">
         <p className='text-3xl font-semibold text-center tracking-wide leading-[1.5] mb-3'>Admin Dashboard</p>
-        <div className='w-[60%] md:w-[30%] flex flex-col'>
+        <div className='w-[80%] md:w-[30%] flex flex-col'>
         <input
             placeholder="Enter Email"
             type="email"
