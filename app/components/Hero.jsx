@@ -8,11 +8,11 @@ export default function Hero() {
   return (
     <div className="flex flex-col md:flex-row md:h-screen mx-auto p-4 relative">
         <div className=" flex md:flex-col md:w-1/2 justify-center text-center md:text-left p-4">
-            <div className='w-full md:w-[90%]'>
-                <div className='w-full md:w-[80%]'>
-                <h1 className='text-4xl md:text-6xl font-bold tracking-wider leading-[1.3] mb-4'>Handmade, With an Extra Pinch of <span className='text-[#e20202]'>Love</span>
+            <div className='w-full'>
+                
+                <h1 className='text-4xl md:text-6xl font-bold tracking-wider leading-tight mb-4'>Handmade, <br /> With an Extra <br /> Pinch of <span className='text-[#e20202]'>Love</span>
                 </h1>
-                </div>
+                
                 <p className='text-2xl md:text-3xl tracking-wider text-[#555555] leading-[1.5] mb-6'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <Link href="/product">
                 <button className='mx-auto md:mx-0 cursor-pointer bg-[#FBB200] px-5 py-3 text-lg md:text-xl rounded-full flex font-medium text-white tracking-wider align-middle justify-center'>
