@@ -56,7 +56,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       
           <div className="col-span-1">
-            <Image src="/food.png" alt="food" width={40} height={40} />
+            <Image src="/food.png" alt="food" width={40} height={4e0} />
            <h1 className="text-xl font-bold tracking-wider leading-[1.3] mt-5">All Kinds of Foods</h1>
             <p className="text-lg tracking-wider text-[#555555] leading-[1.7] mt-4">Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
           </div>

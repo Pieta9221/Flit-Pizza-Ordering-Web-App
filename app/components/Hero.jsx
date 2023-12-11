@@ -25,7 +25,7 @@ export default function Hero() {
    
         </div>
 
-        <div class="md:w-1/2 justify-center text-center m-auto">
+        <div className="md:w-1/2 justify-center text-center m-auto">
             
         <Image src="/hero-img.png" alt="Search" width={400} height={300} className='lg:ml-20'/>
        
