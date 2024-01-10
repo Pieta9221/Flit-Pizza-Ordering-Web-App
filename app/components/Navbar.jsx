@@ -39,12 +39,12 @@ const Navbar = () => {
           </li>
           
           <li>
-            <Link href="#">
+            <Link href="/blog">
               <span className="cursor-pointer">BLOG</span>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/contact">
               <span className="cursor-pointer">CONTACT</span>
             </Link>
           </li>
@@ -92,12 +92,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/blog">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">BLOG</span>
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/contact">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">CONTACT</span>
             </Link>
           </li>
