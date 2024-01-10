@@ -1,3 +1,8 @@
+"use client"
+import React, { Component } from "react"
+import Slider from "react-slick"
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -13,6 +18,41 @@ export default function Home() {
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     images: ['/client-1.jpg', '/client-2.jpg', '/client-3.jpg', '/client-4.jpg'],
   }
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   const pizzaMenu = [
     {
@@ -98,19 +138,21 @@ export default function Home() {
           
     </div>
     <div className="mx-auto py-20 px-4 relative">
-        <p className="text-2xl md:text-3xl tracking-wider font-semibold text-[#e20202] leading-[1.7] mb-3 mt-2">Customer Feedback</p>
-        <h1 className="text-4xl md:text-5xl font-bold tracking-wider leading-[1.3] mb-6 pb-16">Client Testimonials</h1>
-        <Image src="/leaf.png" alt="Search" width={100} height={100} className="absolute top-0 left-0"/>
-        {testimonials.images && testimonials.images.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {testimonials.images.map((image, index) => (
-              <Testimonial key={index} image={image} name={testimonials.name} description={testimonials.description} id={index} />
-            ))}
-          </div>
-        ) : (
-          <p className="text-xl tracking-wider text-[#555555] leading-[1.7] mt-4">No testimonials available.</p>
-        )}
-      </div>
+  <Image src="/leaf.png" alt="Search" width={100} height={100} className="absolute top-0 left-0" />
+  <p className="text-2xl md:text-3xl tracking-wider font-semibold text-[#e20202] leading-[1.7] mb-3 mt-2">Customer Feedback</p>
+  <h1 className="text-4xl md:text-5xl font-bold tracking-wider leading-[1.3] mb-6 pb-16">Client Testimonials</h1>
+  <Slider {...settings}>
+    {testimonials.images && testimonials.images.length > 0 ? (
+      testimonials.images.map((image, index) => (
+        <div key={index}>
+          <Testimonial image={image} name={testimonials.name} description={testimonials.description} id={index} />
+        </div>
+      ))
+    ) : (
+      <p className="text-xl tracking-wider text-[#555555] leading-[1.7] mt-4">No testimonials available.</p>
+    )}
+  </Slider>
+</div>
 
     
     </main>

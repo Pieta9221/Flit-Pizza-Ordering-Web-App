@@ -21,6 +21,11 @@ body {
     opacity: 1;
   }
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+
+}
   
 
 *::-webkit-scrollbar {

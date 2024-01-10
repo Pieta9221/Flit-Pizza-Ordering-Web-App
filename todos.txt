@@ -1,0 +1,5 @@
+create .env for cloudinary details
+slider
+pagination implementation
+backend hosting
+contact us page

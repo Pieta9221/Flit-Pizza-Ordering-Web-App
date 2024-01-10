@@ -37,11 +37,7 @@ const Navbar = () => {
               <span className="cursor-pointer">PRODUCTS</span>
             </Link>
           </li>
-          <li>
-            <Link href="#">
-              <span className="cursor-pointer">PAGES</span>
-            </Link>
-          </li>
+          
           <li>
             <Link href="#">
               <span className="cursor-pointer">BLOG</span>
@@ -93,11 +89,6 @@ const Navbar = () => {
           <li>
             <Link href="/products">
               <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">PRODUCTS</span>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-              <span className="block py-2 px-4 hover:bg-gray-100 cursor-pointer">PAGES</span>
             </Link>
           </li>
           <li>
