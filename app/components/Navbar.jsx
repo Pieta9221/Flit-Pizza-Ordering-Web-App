@@ -23,10 +23,9 @@ const SearchModal = ({ onClose }) => {
         </button>
         <input
           type="text"
-          value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="What pizza are you craving?"
-          className="border p-4 w-full rounded-full text-lg bg-transparent placeholder-white focus:outline-none mt-4"
+          className="border p-4 w-full rounded-full text-lg bg-transparent text-white placeholder-white focus:outline-none mt-4"
         />
         <div className="absolute top-[16%] md:top-[15%] right-10 cursor-pointer text-white">
           <AiOutlineSearch size={24} onClick={handleSearch} />
