@@ -65,7 +65,7 @@ export default function Page() {
                 
                 <h1 className='text-4xl md:text-3xl font-bold tracking-wider leading-tight mb-4'>Sustainability in Every Slice: A Greener Approach to Pizza Making</h1>
                 <p className="text-lg tracking-wider text-[#888888] leading-[1.7] mb-4">24th Dec, 2023</p>
-                <p className="text-lg tracking-wider text-[#555555] leading-[1.7] mb-4">Discover our commitment to sustainability as we take you behind the scenes of our eco-friendly pizza-making practices. From locally sourced ingredients to eco-conscious packaging, learn how we're making a positive impact on the planet, one delicious slice at a time...</p>
+                <p className="text-lg tracking-wider text-[#555555] leading-[1.7] mb-4">Discover our commitment to sustainability as we take you behind the scenes of our eco-friendly pizza-making practices. From locally sourced ingredients to eco-conscious packaging, learn how we are making a positive impact on the planet, one delicious slice at a time...</p>
                              
                 <button className='mx-auto md:mx-0 cursor-pointer bg-[#FBB200] px-5 py-3 text-lg md:text-xl rounded-full flex font-medium text-white tracking-wider align-middle justify-center'>
                     
