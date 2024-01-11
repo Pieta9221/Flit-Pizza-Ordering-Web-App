@@ -18,19 +18,19 @@ export default function Page() {
                 type="text"
                 required
                 placeholder="*Name"
-                className="w-[90%] py-3 px-4 rounded-3xl border border-gray-300 rounded focus:outline-none focus:border-[#E20202] mb-5"
+                className="w-[90%] py-3 px-4 border border-gray-300 rounded focus:outline-none focus:border-[#E20202] mb-5"
                 />
                 <input
                 type="email"
                 required
                 placeholder="*Email Address"
-                className="w-[90%] py-3 px-4 rounded-3xl border border-gray-300 rounded focus:outline-none focus:border-[#E20202] mb-5"
+                className="w-[90%] py-3 px-4 border border-gray-300 rounded focus:outline-none focus:border-[#E20202] mb-5"
                 />
                 <input
                 type="tel"
                 required
                 placeholder="*Phone Number"
-                className="w-[90%] py-3 px-4 rounded-3xl border border-gray-300 rounded focus:outline-none focus:border-[#E20202] mb-5"
+                className="w-[90%] py-3 px-4 border border-gray-300 rounded focus:outline-none focus:border-[#E20202] mb-5"
                 />
                 
                 <textarea
